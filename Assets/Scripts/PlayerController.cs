@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
 
     //serializable field called pushForce
     [SerializeField] private float _pushForce = 10f;
+
+    //serializable field called verticalSpeed
+    [SerializeField] private float verticalSpeed = 10f;
     
     private Vector2 _lastVelocity;
 
@@ -28,10 +31,12 @@ public class PlayerController : MonoBehaviour
         Vector2 velocity = _playerRb.velocity;
 
         if (Input.GetKey(KeyCode.W)) {
-            velocity += Vector2.up * _pushForce;
+            transform.Translate(Vector2.up * verticalSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S)) {
-            velocity += Vector2.down * _pushForce;
+            //translate down without using velocity (which is a vector)
+            transform.Translate(Vector2.down * verticalSpeed * Time.deltaTime);
+
         }
         if (Input.GetKey(KeyCode.A)) {
             velocity += Vector2.left * _pushForce;

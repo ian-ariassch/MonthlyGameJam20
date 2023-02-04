@@ -6,6 +6,7 @@ public class Grapple : MonoBehaviour
 {
     [SerializeField] private Transform _playerPosition;
     [SerializeField] private LineRenderer _lineRenderer;
+    [SerializeField] private DistanceJoint2D _distanceJoint2D;
 
      
     // Start is called before the first frame update
@@ -18,6 +19,6 @@ public class Grapple : MonoBehaviour
     void Update()
     {
         _lineRenderer.SetPosition(1, _playerPosition.position);
-        _lineRenderer.SetPosition(0, _playerPosition.position + new Vector3(0, 10, 0));
+        _lineRenderer.SetPosition(0, _distanceJoint2D.connectedAnchor);
     }
 }
