@@ -37,13 +37,13 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.A)) {
-            velocity += Vector2.left * _pushForce;
+            velocity += Vector2.left * _pushForce * Time.deltaTime;
 
             transform.localScale = new Vector3(-1, 1, 1);
         }
 
         if (Input.GetKey(KeyCode.D)) {
-            velocity += Vector2.right * _pushForce;
+            velocity += Vector2.right * _pushForce * Time.deltaTime;
 
             transform.localScale = new Vector3(1, 1, 1);
         }
@@ -56,6 +56,19 @@ public class PlayerController : MonoBehaviour
             _playerAnimator.SetBool("isClimbing", true);
         } else {
             _playerAnimator.SetBool("isClimbing", false);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision) {
+        Debug.Log("Collision");
+        if (collision.gameObject.tag == "Wall") {
+            _playerAnimator.SetBool("isTouchingWall", true);
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision) {
+        if (collision.gameObject.tag == "Wall") {
+            _playerAnimator.SetBool("isTouchingWall", false);
         }
     }
 

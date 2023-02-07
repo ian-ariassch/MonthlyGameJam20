@@ -318,7 +318,6 @@ GameObject:
   - component: {fileID: 280681443}
   - component: {fileID: 280681444}
   - component: {fileID: 280681446}
-  - component: {fileID: 280681445}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -430,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3d699e3f2b326488ce3e630093a3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pushForce: 0.05
+  _pushForce: 30
   verticalSpeed: 10
 --- !u!58 &280681443
 CircleCollider2D:
@@ -445,9 +444,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08959103, y: -0.08570409}
+  m_Offset: {x: 0.29640925, y: -0.08570409}
   serializedVersion: 2
-  m_Radius: 0.7606795
+  m_Radius: 0.7376996
 --- !u!232 &280681444
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -467,22 +466,6 @@ DistanceJoint2D:
   m_AutoConfigureDistance: 1
   m_Distance: 12.6
   m_MaxDistanceOnly: 0
---- !u!111 &280681445
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280681436}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400000, guid: 081dc5e152d6bcc46a6e6ee596f026d2, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &280681446
 Animator:
   serializedVersion: 4
@@ -802,7 +785,7 @@ GameObject:
   - component: {fileID: 559806993}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -913,7 +896,7 @@ GameObject:
   - component: {fileID: 602355484}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
