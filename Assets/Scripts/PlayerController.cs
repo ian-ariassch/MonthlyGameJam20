@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float verticalSpeed = 10f;
 
+    [SerializeField] private GameController _gameController;
+
     void Start()
     {
         _playerRb = GetComponent<Rigidbody2D>();
@@ -60,9 +62,13 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
-        Debug.Log("Collision");
         if (collision.gameObject.tag == "Wall") {
             _playerAnimator.SetBool("isTouchingWall", true);
+        }
+
+        if (collision.gameObject.tag == "Goal") {
+            _gameController.Win();
+            collision.gameObject.SetActive(false);
         }
     }
 
