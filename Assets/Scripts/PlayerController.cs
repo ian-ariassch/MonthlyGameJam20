@@ -6,25 +6,23 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _playerRb;
 
-    //serializable field called pushForce
+    private Animator _playerAnimator;
+
     [SerializeField] private float _pushForce = 10f;
 
-    //serializable field called verticalSpeed
     [SerializeField] private float verticalSpeed = 10f;
-    
-    private Vector2 _lastVelocity;
-
-    private bool _hasBounced = false;
 
     void Start()
     {
         _playerRb = GetComponent<Rigidbody2D>();
+
+        _playerAnimator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         handleMovement();
+        handleAnimation();
     }
 
     void handleMovement() {
@@ -33,21 +31,32 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.W)) {
             transform.Translate(Vector2.up * verticalSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.S)) {
-            //translate down without using velocity (which is a vector)
-            transform.Translate(Vector2.down * verticalSpeed * Time.deltaTime);
 
+        if (Input.GetKey(KeyCode.S)) {
+            transform.Translate(Vector2.down * verticalSpeed * Time.deltaTime);
         }
+
         if (Input.GetKey(KeyCode.A)) {
             velocity += Vector2.left * _pushForce;
-        }
-        if (Input.GetKey(KeyCode.D)) {
-            velocity += Vector2.right * _pushForce;
+
+            transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
-            _hasBounced = false;
+        if (Input.GetKey(KeyCode.D)) {
+            velocity += Vector2.right * _pushForce;
+
+            transform.localScale = new Vector3(1, 1, 1);
+        }
 
         _playerRb.velocity = velocity;
     }
+
+    void handleAnimation() {
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) {
+            _playerAnimator.SetBool("isClimbing", true);
+        } else {
+            _playerAnimator.SetBool("isClimbing", false);
+        }
+    }
+
 }
