@@ -41,13 +41,13 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) {
             velocity += Vector2.left * _pushForce * Time.deltaTime;
 
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         }
 
         if (Input.GetKey(KeyCode.D)) {
             velocity += Vector2.right * _pushForce * Time.deltaTime;
 
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x),transform.localScale.y, transform.localScale.z);
         }
 
         _playerRb.velocity = velocity;

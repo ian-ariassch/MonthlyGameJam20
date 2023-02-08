@@ -39,8 +39,6 @@ public class CameraLight : MonoBehaviour
         {
             goingRight = !goingRight;
 
-            Debug.Log("Wall hit");
-
             StartCoroutine("Wait");
         }
     }

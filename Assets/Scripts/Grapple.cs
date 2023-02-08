@@ -23,9 +23,9 @@ public class Grapple : MonoBehaviour
     {
         _mainLineRenderer.SetPosition(0, _distanceJoint2D.connectedAnchor);
 
-        _mainLineRenderer.SetPosition(1, _backLineRendererPositions[0].position);
-        _mainLineRenderer.SetPosition(2, _backLineRendererPositions[1].position);
-        _mainLineRenderer.SetPosition(3, _backLineRendererPositions[2].position);
-        _mainLineRenderer.SetPosition(4, _backLineRendererPositions[3].position);
+        for(int i = 0; i < _backLineRendererPositions.Length; i++)
+        {
+            _mainLineRenderer.SetPosition(i+1, _backLineRendererPositions[i].position);
+        }
     }
 }
