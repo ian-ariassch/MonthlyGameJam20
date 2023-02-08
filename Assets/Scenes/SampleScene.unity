@@ -315,6 +315,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeToWin: 30
   _timerText: {fileID: 1414998939}
+  _trophy: {fileID: 1817957988}
+  _player: {fileID: 280681436}
+  _startingPosition: {x: 0, y: 0.5, z: 0}
+  developerMode: 1
 --- !u!4 &82966419
 Transform:
   m_ObjectHideFlags: 0
@@ -941,7 +945,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280681436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1001,7 +1005,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 7}
   m_AutoConfigureDistance: 1
-  m_Distance: 12.6
+  m_Distance: 6.5
   m_MaxDistanceOnly: 0
 --- !u!95 &280681446
 Animator:
@@ -1392,7 +1396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.3498974, y: -1.854218, z: -12.126122}
+  m_LocalPosition: {x: 4.3498974, y: 4.245782, z: -12.126122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2625,7 +2629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342161750}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.3498974, y: -1.854218, z: -12.126122}
+  m_LocalPosition: {x: 4.3498974, y: 4.245782, z: -12.126122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

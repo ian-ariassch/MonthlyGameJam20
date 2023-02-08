@@ -9,6 +9,14 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _timerText;
 
+    [SerializeField] private GameObject _trophy;
+
+    [SerializeField] private GameObject _player;
+
+    [SerializeField] private Vector3 _startingPosition;
+
+    [SerializeField] private bool developerMode = false;
+
     private bool _isGameOver = false;
 
     void Update()
@@ -33,7 +41,21 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("You Lose!");
-        _isGameOver = true;
+        if(developerMode){
+            Debug.Log("You Lose!");
+            _isGameOver = true;
+        }
+        else{
+            RestartGame();
+        }
+    }
+
+    public void RestartGame()
+    {
+        _isGameOver = false;
+        _timeToWin = 30f;
+        _trophy.SetActive(true);
+        _player.transform.position = _startingPosition;
+        
     }
 }
