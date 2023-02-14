@@ -13,6 +13,10 @@ public class Lasers : MonoBehaviour
 
     [SerializeField] float delayToStart = 0.5f;
 
+    [SerializeField] GameObject _laserHitParticlesPrefab;
+
+    private GameObject _laserHitParticles;
+
     LineRenderer _lineRenderer;
 
     Vector2 _direction;
@@ -20,6 +24,15 @@ public class Lasers : MonoBehaviour
     void Start()
     {
         _direction = _facingRight ? transform.right : -transform.right;
+
+        _laserHitParticles = Instantiate(_laserHitParticlesPrefab, transform.position, Quaternion.identity);
+
+        // _laserHitParticles.SetActive(false);
+
+        //make laserHitParticles face the right direction
+        _laserHitParticles.transform.right = -_direction;
+
+
 
         _lineRenderer = GetComponent<LineRenderer>();
 
@@ -46,7 +59,10 @@ public class Lasers : MonoBehaviour
 
         if (hit)
         {
+            _laserHitParticles.transform.position = hit.point - _direction * 0.05f;
+
             _lineRenderer.SetPosition(1, hit.point);
+
             if (hit.collider.gameObject.tag == "Player")
             {
                 _gameController.GameOver();
@@ -66,6 +82,7 @@ public class Lasers : MonoBehaviour
         {
             float intervalTime = _lineRenderer.enabled ? downTime : upTime;
             _lineRenderer.enabled = !_lineRenderer.enabled;
+            _laserHitParticles.SetActive(_lineRenderer.enabled);
             yield return new WaitForSeconds(intervalTime);
         }
     }
