@@ -49,8 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameController: {fileID: 0}
   speed: 5
-  waitTime: 0.5
-  goingRight: 1
+  waitTime: 0.2
+  goingRight: 0
 --- !u!114 &4887708146578237429
 MonoBehaviour:
   m_ObjectHideFlags: 0

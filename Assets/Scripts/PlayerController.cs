@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
         _playerAnimator = GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if(_gameController.gameHasStarted && _grappleController.isRopeAttached){
             handleMovement();
