@@ -101,8 +101,9 @@ MonoBehaviour:
   _gameController: {fileID: 0}
   _facingRight: 1
   upTime: 3
-  downTime: 0.5
-  delayToStart: 0.5
+  downTime: 1
+  delayToStart: 0
+  _laserHitParticlesPrefab: {fileID: 2453923890561319303, guid: 1655834c62478e347b8826303ed7e94b, type: 3}
 --- !u!120 &7057594133389724224
 LineRenderer:
   m_ObjectHideFlags: 0

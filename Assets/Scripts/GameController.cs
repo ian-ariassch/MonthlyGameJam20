@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -17,16 +15,33 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private bool developerMode = false;
 
+    [SerializeField] private GameObject _roof;
+
+    [SerializeField] private Grapple _grapple;
+
     private bool _isGameOver = false;
+
+    public bool gameHasStarted = false;
 
     void Update()
     {
+
+        //if any key is pressed, start the game
+        if (!gameHasStarted)
+        {
+            if (Input.anyKey)
+            {
+                _roof.SetActive(false);
+                gameHasStarted = true;
+            }
+        }
+
         if (_timeToWin <= 0)
         {
             GameOver();
         }
 
-        if(!_isGameOver)
+        if(!_isGameOver && gameHasStarted)
         {
             _timeToWin -= Time.deltaTime;
             _timerText.text = _timeToWin.ToString("F2");
@@ -52,10 +67,14 @@ public class GameController : MonoBehaviour
 
     public void RestartGame()
     {
-        _isGameOver = false;
         _timeToWin = 30f;
+        _timerText.text = _timeToWin.ToString("F2");
+        _isGameOver = false;
         _trophy.SetActive(true);
+        _roof.SetActive(true);
+        gameHasStarted = false;
         _player.transform.position = _startingPosition;
+        _grapple.DetachRope();
         
     }
 }

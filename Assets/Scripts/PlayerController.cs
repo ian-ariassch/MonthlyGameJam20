@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -14,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private GameController _gameController;
 
+    [SerializeField] private Grapple _grappleController;
+
     void Start()
     {
         _playerRb = GetComponent<Rigidbody2D>();
@@ -23,14 +23,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        handleMovement();
-        handleAnimation();
+        if(_gameController.gameHasStarted && _grappleController.isRopeAttached){
+            handleMovement();
+            handleAnimation();
+        }
     }
 
     void handleMovement() {
         Vector2 velocity = _playerRb.velocity;
 
-        if (Input.GetKey(KeyCode.W)) {
+        if (Input.GetKey(KeyCode.W) && transform.position.y < 3f) {
             transform.Translate(Vector2.up * verticalSpeed * Time.deltaTime);
         }
 
@@ -75,6 +77,16 @@ public class PlayerController : MonoBehaviour
     void OnCollisionExit2D(Collision2D collision) {
         if (collision.gameObject.tag == "Wall") {
             _playerAnimator.SetBool("isTouchingWall", false);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.tag == "Danger") {
+            _gameController.GameOver();
+        }
+
+        if (collision.gameObject.tag == "AttachRope"){
+            _grappleController.AttachRope();
         }
     }
 
