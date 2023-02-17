@@ -9,6 +9,7 @@ TagManager:
   - ElectricBase
   - Danger
   - AttachRope
+  - LaserButton
   layers:
   - Default
   - TransparentFX

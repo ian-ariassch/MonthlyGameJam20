@@ -17,12 +17,14 @@ public class Lasers : MonoBehaviour
 
     private GameObject _laserHitParticles;
 
-    LineRenderer _lineRenderer;
+    public LineRenderer _lineRenderer;
 
     Vector2 _direction;
     // Start is called before the first frame update
     void Start()
     {
+        _gameController = GameObject.Find("GameController").GetComponent<GameController>();
+
         _direction = _facingRight ? transform.right : -transform.right;
 
         _laserHitParticles = Instantiate(_laserHitParticlesPrefab, transform.position, Quaternion.identity);
@@ -37,6 +39,8 @@ public class Lasers : MonoBehaviour
         _lineRenderer = GetComponent<LineRenderer>();
 
         _lineRenderer.enabled = false;
+
+        _lineRenderer.useWorldSpace = true;
 
         StartCoroutine("StartLaserSequence");
     }
@@ -68,6 +72,14 @@ public class Lasers : MonoBehaviour
                 _gameController.GameOver();
             }
         }
+    }
+
+    public void TurnOffLaser()
+    {
+        StopCoroutine("StartLaserSequence");
+        StopCoroutine("ToggleLaser");
+        _lineRenderer.enabled = false;
+        _laserHitParticles.SetActive(false);
     }
 
     private IEnumerator StartLaserSequence()
