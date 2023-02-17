@@ -38,9 +38,11 @@ public class Lasers : MonoBehaviour
 
         _lineRenderer = GetComponent<LineRenderer>();
 
+        _lineRenderer.useWorldSpace = true;
+
         _lineRenderer.enabled = false;
 
-        _lineRenderer.useWorldSpace = true;
+
 
         StartCoroutine("StartLaserSequence");
     }
