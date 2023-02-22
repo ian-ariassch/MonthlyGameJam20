@@ -15,6 +15,8 @@ public class Lasers : MonoBehaviour
 
     [SerializeField] GameObject _laserHitParticlesPrefab;
 
+    [SerializeField] Transform _laserOutPoint;
+
     private GameObject _laserHitParticles;
 
     public LineRenderer _lineRenderer;
@@ -29,20 +31,13 @@ public class Lasers : MonoBehaviour
 
         _laserHitParticles = Instantiate(_laserHitParticlesPrefab, transform.position, Quaternion.identity);
 
-        // _laserHitParticles.SetActive(false);
-
-        //make laserHitParticles face the right direction
         _laserHitParticles.transform.right = -_direction;
-
-
 
         _lineRenderer = GetComponent<LineRenderer>();
 
         _lineRenderer.useWorldSpace = true;
 
         _lineRenderer.enabled = false;
-
-
 
         StartCoroutine("StartLaserSequence");
     }
@@ -59,9 +54,9 @@ public class Lasers : MonoBehaviour
     {
         RaycastHit2D hit;
 
-        hit = Physics2D.Raycast(transform.position, _direction);
+        hit = Physics2D.Raycast(_laserOutPoint.position, _direction);
 
-        _lineRenderer.SetPosition(0, transform.position);
+        _lineRenderer.SetPosition(0, _laserOutPoint.position);
 
         if (hit)
         {
