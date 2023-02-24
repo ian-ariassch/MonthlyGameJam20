@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(_gameController.gameHasStarted && _grappleController.isRopeAttached){
+        if(_gameController.gameHasStarted && _grappleController.isRopeAttached && !_gameController._isGameOver){
             handleMovement();
             handleAnimation();
         }

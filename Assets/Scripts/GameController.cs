@@ -15,23 +15,34 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private bool developerMode = false;
 
-    [SerializeField] private GameObject _roof;
+    [SerializeField] private BoxCollider2D _roofCollider;
 
     [SerializeField] private Grapple _grapple;
 
-    private bool _isGameOver = false;
+    [SerializeField] private SpriteRenderer _glassRoof;
+
+    [SerializeField] private Sprite _glassRoofBroken;
+
+    [SerializeField] private Sprite _glassRoofFixed;
+
+    [SerializeField] private GameObject[] _uiOptions;
+
+    [SerializeField] private GameObject _nextLevelUiButton; 
+
+    public bool _isGameOver = false;
+
+    private bool _gameWon = false;
 
     public bool gameHasStarted = false;
 
     void Update()
     {
-
-        //if any key is pressed, start the game
         if (!gameHasStarted)
         {
             if (Input.anyKey)
             {
-                _roof.SetActive(false);
+                _roofCollider.enabled = false;
+                _glassRoof.sprite = _glassRoofBroken;
                 gameHasStarted = true;
             }
         }
@@ -51,18 +62,22 @@ public class GameController : MonoBehaviour
     public void Win()
     {
         Debug.Log("You Win!");
+        _gameWon = true;
         _isGameOver = true;
+        TurnOnUIOptions();
     }
 
     public void GameOver()
     {
         if(developerMode){
             Debug.Log("You Lose!");
-            _isGameOver = true;
         }
         else{
-            RestartGame();
+            TurnOnUIOptions();
+            _isGameOver = true;
         }
+
+
     }
 
     public void RestartGame()
@@ -71,10 +86,36 @@ public class GameController : MonoBehaviour
         _timerText.text = _timeToWin.ToString("F2");
         _isGameOver = false;
         _trophy.SetActive(true);
-        _roof.SetActive(true);
+        _roofCollider.enabled = true;
         gameHasStarted = false;
         _player.transform.position = _startingPosition;
         _grapple.DetachRope();
-        
+        _glassRoof.sprite = _glassRoofFixed;
+        _gameWon = false;
+        TurnOffUIOptions();
+    }
+
+    void TurnOnUIOptions()
+    {
+        foreach (GameObject uiOption in _uiOptions)
+        {
+            uiOption.SetActive(true);
+        }
+
+        if(_gameWon && _nextLevelUiButton)
+        {
+            _nextLevelUiButton.SetActive(true);
+        }
+    }
+
+    void TurnOffUIOptions()
+    {
+        foreach (GameObject uiOption in _uiOptions)
+        {
+            uiOption.SetActive(false);
+        }
+
+        if(_nextLevelUiButton)
+            _nextLevelUiButton.SetActive(false);
     }
 }
