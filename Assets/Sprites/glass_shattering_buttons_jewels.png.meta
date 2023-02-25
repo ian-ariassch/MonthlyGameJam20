@@ -1,0 +1,1511 @@
+fileFormatVersion: 2
+guid: 5000babba02160b439f89bb7e1f990ac
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_0
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1653
+        width: 259
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6af346790185546a3b6a3e5f0bcfea
+      internalID: 2013882300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_1
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1744
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d53c2f4a43cda145bc09ab8153efe4f
+      internalID: 1433995106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_2
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1743
+        width: 53
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f92b077c25f8214ebe46528de279ecb
+      internalID: 1235148906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1743
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9d15177f05f284abfb0a32b5288c72
+      internalID: -61218103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_4
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1659
+        width: 302
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d92e74ca28c91b46b1b8af70b7be0a5
+      internalID: -1150489830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_5
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1736
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef48e89f74f7114e9c12d414065634f
+      internalID: -1482943108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1702
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6ad0e4b174bf14e9efef8ce32c0eb1
+      internalID: -795248877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_7
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 1706
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd737848270f2aa48a533511a8bc1c15
+      internalID: -1480071908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_8
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1669
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f631ab58e2a714b94b56822ba91ef1
+      internalID: -640515516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_9
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1667
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5663353824a0748bb05529eec0d18b
+      internalID: -1060023392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_10
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1516
+        width: 173
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d484de74e3345814fbd3ed541b23005d
+      internalID: -1663502347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_11
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 1656
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374b95c483329b6459c6c9c844605249
+      internalID: -219754118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_12
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 1647
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57d93060b830f345b27438f25594e09
+      internalID: -360932847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_13
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1494
+        width: 178
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa708c007fa40d8408f7cef01083f543
+      internalID: -1561984971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_14
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1568
+        width: 102
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9a5b154c599f34a87299438d78d508
+      internalID: 114450423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_15
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1630
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228622193d5daed47a5f85c90d48f678
+      internalID: -2123788774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_16
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1603
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc4b7dbefd11934cbd8443fdab6343a
+      internalID: -240716835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_17
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1607
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23451f8aaa3e724b949ca4b33865a54
+      internalID: -1059273755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_18
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1614
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89bcff28195c5e540a76a84d984cdc16
+      internalID: -1673009224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_19
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1604
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3b5abba2ea4fd4eb9c494188b467bb
+      internalID: 2136271299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_20
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1603
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4c3782461c0b247b940e1f73a587f2
+      internalID: 1716298274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1531
+        width: 79
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d8bd81ec0f8cd49bb8ebdbb38b7d31
+      internalID: -1793087375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_22
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1482
+        width: 86
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4c1b7510d27fe49af15bade6a8a7d1
+      internalID: 1768143987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_23
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1556
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e47977a07b0b84e952d9623f42b8e2
+      internalID: 876669761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_24
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1557
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbb953849471804685a50bcb7c2326a
+      internalID: 1273436674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_25
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1541
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e1d7cf9ba232d49bd1d2d19fabcfcd
+      internalID: -1715351028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_26
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 1545
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5895f5ca6fea8f4a91db786966e0480
+      internalID: 89653664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_27
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1498
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d456359e73de848be2e67a71ea90c9
+      internalID: 372404767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_28
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1488
+        width: 81
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a15621eb077f247b3ed160b309f11e
+      internalID: -1800504048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_29
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1461
+        width: 142
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1041cf9c8f92a24294807844c5b402b
+      internalID: 1146516756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_30
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1468
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04cddf8c4e0b13479ef5ea3c216172e
+      internalID: 1090334711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_31
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1469
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d8a0ef4f8efb24b81749659ef43d75
+      internalID: -1708845017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_32
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1470
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18266d2206b3a70448d62ceaf5345aae
+      internalID: 411886326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_33
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1471
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1db1cbb3e4da6e40b1e4282f96e8ea5
+      internalID: 1537337544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_34
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1461
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de485689a53c4b647b34f0123ed0eb70
+      internalID: 1517836131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_35
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1469
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be52a1f83139b464fbf476ce6e84e01c
+      internalID: 485844273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_36
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1315
+        width: 320
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abcf3f65c487c44185f1ab380b08c9c
+      internalID: -2059186110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_37
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1437
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e34a36ff38ec44a9aeee00111df3cb
+      internalID: 1030133678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_38
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 1341
+        width: 246
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540911194dc61384da5fc9fc7f3bdd3f
+      internalID: 1561228603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_39
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1405
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce24d6615285a3042b8446aa765fe5d9
+      internalID: -157519572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_40
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1414
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a615e0b2751ee9439e5541bd2234f3a
+      internalID: 1906846245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_41
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1335
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827112a88d4495040860f621789910f6
+      internalID: 2095208535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_42
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1307
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd524d3d600207498e44b378018045d
+      internalID: 1533858575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_43
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1320
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7abd99633ae3c4fa4e96106449ae16
+      internalID: 431609414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_44
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1322
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d75edceeaf2a747b33d955d314dc6c
+      internalID: 2142124716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_45
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1307
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865dbd558363e954592fed468155abf9
+      internalID: 1771808121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_46
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1212
+        width: 93
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74b3c380d9d49844bb597b792b46abf
+      internalID: -1581584815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_47
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1258
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0765d536b704183418aac68a5adcc353
+      internalID: 779973203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_48
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1286
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0378e0ef751b8014f94870fdbfc76784
+      internalID: -1323030161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_49
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 1239
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d907b8753fe05e4f9a4acc117d317ed
+      internalID: -709457855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_50
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1229
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fd5c5c7fe257a479a7628de936eacb
+      internalID: -47827965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_51
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 714
+        width: 387
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e20b3e73eafd14dbfe4fcc40f36f3f
+      internalID: -1315502698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_52
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1107
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d328766904925754084dc3dc3f2dce46
+      internalID: -995606990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_53
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 722
+        width: 337
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f2f0d3144392b46b1ae5d68189e16d
+      internalID: -1960389215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_54
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 154
+        width: 217
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfacddff0e45a1448be467cc37495833
+      internalID: -390568374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_55
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 188
+        width: 256
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ff8186d940bf348844654075fcdd58
+      internalID: -1534147207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_56
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 194
+        width: 273
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3eeef15ec7c70e47b295103c612d398
+      internalID: -394556013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_57
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 507
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11f8391de85bc0448b9a60cb506aae4
+      internalID: -594296652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_58
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 507
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0651521a4a6bbb249aee413f78c95494
+      internalID: 508760126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_59
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 507
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b6438d5d3f12745b6f033d02a3d229
+      internalID: 1488688619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_60
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 211
+        width: 297
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05b3a5da28f1fd4c84591204f9f282c
+      internalID: -1067869315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glass_shattering_buttons_jewels_61
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 232
+        width: 11
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f316d9754629a04abfff7a6f8219020
+      internalID: -1475525212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      glass_shattering_buttons_jewels_31: -1708845017
+      glass_shattering_buttons_jewels_56: -394556013
+      glass_shattering_buttons_jewels_17: -1059273755
+      glass_shattering_buttons_jewels_27: 372404767
+      glass_shattering_buttons_jewels_34: 1517836131
+      glass_shattering_buttons_jewels_3: -61218103
+      glass_shattering_buttons_jewels_8: -640515516
+      glass_shattering_buttons_jewels_39: -157519572
+      glass_shattering_buttons_jewels_48: -1323030161
+      glass_shattering_buttons_jewels_61: -1475525212
+      glass_shattering_buttons_jewels_0: 2013882300
+      glass_shattering_buttons_jewels_10: -1663502347
+      glass_shattering_buttons_jewels_24: 1273436674
+      glass_shattering_buttons_jewels_55: -1534147207
+      glass_shattering_buttons_jewels_16: -240716835
+      glass_shattering_buttons_jewels_50: -47827965
+      glass_shattering_buttons_jewels_6: -795248877
+      glass_shattering_buttons_jewels_1: 1433995106
+      glass_shattering_buttons_jewels_11: -219754118
+      glass_shattering_buttons_jewels_26: 89653664
+      glass_shattering_buttons_jewels_53: -1960389215
+      glass_shattering_buttons_jewels_59: 1488688619
+      glass_shattering_buttons_jewels_46: -1581584815
+      glass_shattering_buttons_jewels_36: -2059186110
+      glass_shattering_buttons_jewels_22: 1768143987
+      glass_shattering_buttons_jewels_23: 876669761
+      glass_shattering_buttons_jewels_38: 1561228603
+      glass_shattering_buttons_jewels_9: -1060023392
+      glass_shattering_buttons_jewels_28: -1800504048
+      glass_shattering_buttons_jewels_41: 2095208535
+      glass_shattering_buttons_jewels_4: -1150489830
+      glass_shattering_buttons_jewels_54: -390568374
+      glass_shattering_buttons_jewels_60: -1067869315
+      glass_shattering_buttons_jewels_18: -1673009224
+      glass_shattering_buttons_jewels_29: 1146516756
+      glass_shattering_buttons_jewels_32: 411886326
+      glass_shattering_buttons_jewels_44: 2142124716
+      glass_shattering_buttons_jewels_14: 114450423
+      glass_shattering_buttons_jewels_40: 1906846245
+      glass_shattering_buttons_jewels_51: -1315502698
+      glass_shattering_buttons_jewels_57: -594296652
+      glass_shattering_buttons_jewels_42: 1533858575
+      glass_shattering_buttons_jewels_43: 431609414
+      glass_shattering_buttons_jewels_13: -1561984971
+      glass_shattering_buttons_jewels_47: 779973203
+      glass_shattering_buttons_jewels_37: 1030133678
+      glass_shattering_buttons_jewels_15: -2123788774
+      glass_shattering_buttons_jewels_12: -360932847
+      glass_shattering_buttons_jewels_7: -1480071908
+      glass_shattering_buttons_jewels_21: -1793087375
+      glass_shattering_buttons_jewels_45: 1771808121
+      glass_shattering_buttons_jewels_58: 508760126
+      glass_shattering_buttons_jewels_52: -995606990
+      glass_shattering_buttons_jewels_35: 485844273
+      glass_shattering_buttons_jewels_49: -709457855
+      glass_shattering_buttons_jewels_30: 1090334711
+      glass_shattering_buttons_jewels_20: 1716298274
+      glass_shattering_buttons_jewels_5: -1482943108
+      glass_shattering_buttons_jewels_2: 1235148906
+      glass_shattering_buttons_jewels_19: 2136271299
+      glass_shattering_buttons_jewels_25: -1715351028
+      glass_shattering_buttons_jewels_33: 1537337544
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
