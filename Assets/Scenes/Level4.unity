@@ -1470,7 +1470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06fb5a770285c94488bc543170183264, type: 3}
---- !u!1 &416550272
+--- !u!1 &425507567
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1478,8 +1478,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 416550273}
-  - component: {fileID: 416550274}
+  - component: {fileID: 425507568}
+  - component: {fileID: 425507569}
   m_Layer: 0
   m_Name: SolarLight
   m_TagString: Untagged
@@ -1487,28 +1487,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &416550273
+--- !u!4 &425507568
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416550272}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9997746, w: 0.021233669}
-  m_LocalPosition: {x: 0.08, y: 89.68, z: 0}
+  m_GameObject: {fileID: 425507567}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
+  m_LocalPosition: {x: 0.08, y: 90.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 459463873}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!114 &416550274
+--- !u!114 &425507569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416550272}
+  m_GameObject: {fileID: 425507567}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
@@ -1985,8 +1985,8 @@ Transform:
   m_Children:
   - {fileID: 1091080937}
   - {fileID: 364961631}
-  - {fileID: 416550273}
   - {fileID: 482568147}
+  - {fileID: 425507568}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2141,7 +2141,7 @@ Transform:
   m_Children:
   - {fileID: 1662105449}
   m_Father: {fileID: 459463873}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &482568148
 SpriteRenderer:
@@ -4615,7 +4615,7 @@ SpriteRenderer:
   m_SortingLayerID: -1686561489
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 19309a35d9eca524ab12c04c33ffe364, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9e6fb642ddcc9d45a50449d84d9563d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
