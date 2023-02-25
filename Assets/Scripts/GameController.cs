@@ -33,7 +33,14 @@ public class GameController : MonoBehaviour
 
     private bool _gameWon = false;
 
+    private AudioSource _audioSource;
+
     public bool gameHasStarted = false;
+
+    void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -69,6 +76,9 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
+        if(!_isGameOver)
+            _audioSource.Play();
+
         if(developerMode){
             Debug.Log("You Lose!");
         }
@@ -76,6 +86,8 @@ public class GameController : MonoBehaviour
             TurnOnUIOptions();
             _isGameOver = true;
         }
+
+
 
 
     }

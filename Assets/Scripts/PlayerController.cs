@@ -14,11 +14,34 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Grapple _grappleController;
 
+    [SerializeField] private AudioSource _footstepsAudioSource;
+
+    [SerializeField] private AudioSource _jewelGrabAudioSource;
+
+    private bool _isTouchingWall = false;
+
+    private bool _isClimbing = false;
+
+    private bool _isPlayingFootsteps = false;
+
     void Start()
     {
         _playerRb = GetComponent<Rigidbody2D>();
 
         _playerAnimator = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        if (_isTouchingWall && _isClimbing && !_isPlayingFootsteps) {
+            _footstepsAudioSource.Play();
+            _isPlayingFootsteps = true;
+        }
+
+        if (!_isClimbing && _isPlayingFootsteps) {
+            _footstepsAudioSource.Stop();
+            _isPlayingFootsteps = false;
+        }
     }
 
     void FixedUpdate()
@@ -57,26 +80,32 @@ public class PlayerController : MonoBehaviour
 
     void handleAnimation() {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)) {
-            _playerAnimator.SetBool("isClimbing", true);
+            _isClimbing = true;
+            _playerAnimator.SetBool("isClimbing", _isClimbing);
         } else {
-            _playerAnimator.SetBool("isClimbing", false);
+            _isClimbing = false;
+            _playerAnimator.SetBool("isClimbing", _isClimbing);
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Wall") {
-            _playerAnimator.SetBool("isTouchingWall", true);
+            _isTouchingWall = true;
+            _playerAnimator.SetBool("isTouchingWall", _isTouchingWall);
         }
 
         if (collision.gameObject.tag == "Goal") {
             _gameController.Win();
+            _jewelGrabAudioSource.Play();
             collision.gameObject.SetActive(false);
         }
     }
 
     void OnCollisionExit2D(Collision2D collision) {
         if (collision.gameObject.tag == "Wall") {
-            _playerAnimator.SetBool("isTouchingWall", false);
+            _isTouchingWall = false;
+            _footstepsAudioSource.Stop();
+            _playerAnimator.SetBool("isTouchingWall", _isTouchingWall);
         }
     }
 
