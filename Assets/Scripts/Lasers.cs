@@ -67,6 +67,7 @@ public class Lasers : MonoBehaviour
             if (hit.collider.gameObject.tag == "Player")
             {
                 _gameController.GameOver();
+                TurnOffLaser();
             }
         }
     }

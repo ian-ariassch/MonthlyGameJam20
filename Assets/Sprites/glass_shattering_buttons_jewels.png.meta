@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1478,8 +1478,8 @@ TextureImporter:
       glass_shattering_buttons_jewels_29: 1146516756
       glass_shattering_buttons_jewels_32: 411886326
       glass_shattering_buttons_jewels_44: 2142124716
-      glass_shattering_buttons_jewels_14: 114450423
       glass_shattering_buttons_jewels_40: 1906846245
+      glass_shattering_buttons_jewels_14: 114450423
       glass_shattering_buttons_jewels_51: -1315502698
       glass_shattering_buttons_jewels_57: -594296652
       glass_shattering_buttons_jewels_42: 1533858575

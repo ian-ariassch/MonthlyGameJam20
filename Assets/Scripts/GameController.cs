@@ -27,21 +27,19 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private GameObject[] _uiOptions;
 
-    [SerializeField] private GameObject _nextLevelUiButton; 
+    [SerializeField] private GameObject _nextLevelUiButton;
+
+    [SerializeField] private ParticleSystem _particleSystem;
+
+    [SerializeField] private AudioSource _audioSourceSiren;
+
+    [SerializeField] private AudioSource _audioSourceGlassShatter; 
 
     public bool _isGameOver = false;
 
     private bool _gameWon = false;
 
-    private AudioSource _audioSource;
-
     public bool gameHasStarted = false;
-
-    void Start()
-    {
-        _audioSource = GetComponent<AudioSource>();
-    }
-
     void Update()
     {
         if (!gameHasStarted)
@@ -50,6 +48,8 @@ public class GameController : MonoBehaviour
             {
                 _roofCollider.enabled = false;
                 _glassRoof.sprite = _glassRoofBroken;
+                _particleSystem.Play();
+                _audioSourceGlassShatter.Play();
                 gameHasStarted = true;
             }
         }
@@ -76,8 +76,9 @@ public class GameController : MonoBehaviour
 
     public void GameOver()
     {
+
         if(!_isGameOver)
-            _audioSource.Play();
+            _audioSourceSiren.Play();
 
         if(developerMode){
             Debug.Log("You Lose!");
@@ -94,17 +95,17 @@ public class GameController : MonoBehaviour
 
     public void RestartGame()
     {
+        _player.transform.position = _startingPosition;
         _timeToWin = 30f;
         _timerText.text = _timeToWin.ToString("F2");
-        _isGameOver = false;
         _trophy.SetActive(true);
         _roofCollider.enabled = true;
         gameHasStarted = false;
-        _player.transform.position = _startingPosition;
         _grapple.DetachRope();
         _glassRoof.sprite = _glassRoofFixed;
-        _gameWon = false;
         TurnOffUIOptions();
+        _gameWon = false;
+        _isGameOver = false;
     }
 
     void TurnOnUIOptions()
