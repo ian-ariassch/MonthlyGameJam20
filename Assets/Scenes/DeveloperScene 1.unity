@@ -234,6 +234,12 @@ MonoBehaviour:
   _glassRoof: {fileID: 734442704}
   _glassRoofBroken: {fileID: 21300000, guid: 773af9f07d96055409770ce8ce853934, type: 3}
   _glassRoofFixed: {fileID: 21300000, guid: 168aff2b35c5ba34d98b469c02a26859, type: 3}
+  _uiOptions: []
+  _nextLevelUiButton: {fileID: 0}
+  _particleSystem: {fileID: 0}
+  _audioSourceSiren: {fileID: 0}
+  _audioSourceGlassShatter: {fileID: 0}
+  _isGameOver: 0
   gameHasStarted: 0
 --- !u!4 &82966419
 Transform:
@@ -363,7 +369,6 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -939,6 +944,8 @@ MonoBehaviour:
   verticalSpeed: 8
   _gameController: {fileID: 82966418}
   _grappleController: {fileID: 1710229352}
+  _footstepsAudioSource: {fileID: 0}
+  _jewelGrabAudioSource: {fileID: 0}
 --- !u!58 &280681443
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1285,7 +1292,6 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -3439,7 +3445,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &922130895
@@ -4742,7 +4748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -5016,7 +5021,6 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -5547,7 +5551,6 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
