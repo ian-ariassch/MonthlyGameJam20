@@ -23,4 +23,15 @@ public class FinalLasersController : MonoBehaviour
             }
         }
     }
+
+    public void ResetLasers()
+    {
+        foreach(Lasers laser in lasers)
+        {
+            laser.TurnOnLaser();
+        }
+        _areLasersActive = true;
+        
+        buttonsPressed = 0;
+    }
 }

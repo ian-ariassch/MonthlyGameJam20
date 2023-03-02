@@ -80,6 +80,11 @@ public class Lasers : MonoBehaviour
         _laserHitParticles.SetActive(false);
     }
 
+    public void TurnOnLaser()
+    {
+        StartCoroutine("StartLaserSequence");
+    }
+
     private IEnumerator StartLaserSequence()
     {
         yield return new WaitForSeconds(delayToStart);

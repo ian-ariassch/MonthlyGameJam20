@@ -35,6 +35,12 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private AudioSource _audioSourceGlassShatter; 
 
+    [SerializeField] private FinalLasersController _finalLasersController;
+
+    [SerializeField] private LaserButton[] _laserButtons;
+
+    [SerializeField] private Lasers[] _lasers;
+
     public bool _isGameOver = false;
 
     private bool _gameWon = false;
@@ -106,6 +112,18 @@ public class GameController : MonoBehaviour
         TurnOffUIOptions();
         _gameWon = false;
         _isGameOver = false;
+
+        foreach(LaserButton laserButton in _laserButtons)
+        {
+            laserButton.ResetButton();
+        }
+
+        foreach(Lasers laser in _lasers)
+        {
+            laser.TurnOnLaser();
+        }
+
+        _finalLasersController.ResetLasers();
     }
 
     void TurnOnUIOptions()
