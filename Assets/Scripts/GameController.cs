@@ -3,7 +3,7 @@ using TMPro;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] private float _timeToWin = 30f;
+    [SerializeField] private float _timeToWin;
 
     [SerializeField] private TextMeshProUGUI _timerText;
 
@@ -45,7 +45,16 @@ public class GameController : MonoBehaviour
 
     private bool _gameWon = false;
 
+    private float _startingTime;
+
     public bool gameHasStarted = false;
+
+    void Start()
+    {
+        _timerText.text = _timeToWin.ToString("F2");
+        _startingTime = _timeToWin;
+    }
+
     void Update()
     {
         if (!gameHasStarted)
@@ -102,7 +111,7 @@ public class GameController : MonoBehaviour
     public void RestartGame()
     {
         _player.transform.position = _startingPosition;
-        _timeToWin = 30f;
+        _timeToWin = _startingTime;
         _timerText.text = _timeToWin.ToString("F2");
         _trophy.SetActive(true);
         _roofCollider.enabled = true;
@@ -118,12 +127,15 @@ public class GameController : MonoBehaviour
             laserButton.ResetButton();
         }
 
+        _finalLasersController.ResetLasers();
+
         foreach(Lasers laser in _lasers)
         {
+            laser.TurnOffLaser();
             laser.TurnOnLaser();
         }
 
-        _finalLasersController.ResetLasers();
+
     }
 
     void TurnOnUIOptions()
